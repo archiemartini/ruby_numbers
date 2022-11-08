@@ -16,5 +16,8 @@ RSpec.describe "get_expanded_form method" do
   it "returns a 3 form number correctly" do
     expect(get_expanded_form(111)).to eq '100 + 10 + 1'
   end
-
+  
+  it "returns a 4 form number correctly" do
+    expect(get_expanded_form(1111)).to eq '1000 + 100 + 10 + 1'
+  end
 end
